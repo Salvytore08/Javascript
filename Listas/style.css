@@ -1,0 +1,45 @@
+body{
+    background-color: rgb(13, 14, 15);
+    transition: 250ms;
+}
+
+.Contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 75vh;
+    color: rgb(190, 184, 184);
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 250ms;
+}
+
+span{
+    font-size: 10vh; font-size: 10vw;    
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 250ms;
+}
+
+button{
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: rgb(155, 138, 113);
+    text-transform: uppercase;
+    width: 20vw;
+    transition: 250ms;
+}
+
+button:hover{
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: rgb(121, 107, 87);
+    text-transform: uppercase;
+    width: 20vw;
+    transition: 250ms;
+}
