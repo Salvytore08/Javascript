@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pruebas</title>
+    <link rel="stylesheet" href="/prueba/style.css">
+</head>
+<body>
+    <div class="botones">
+        <a href="#" class="click" id="Push"> Push </a>
+        <a href="#" class="click" id="Pop"> Pop </a>
+        <a href="#" class="click" id="IndexOf"> IndexOf </a>
+        <a href="#" class="click" id="LastIndexOf"> LastIndexOf </a>
+        <a href="#" class="click" id="Slice"> Slice </a>
+        <a href="#" class="click" id="Join"> Join </a>
+        <a href="#" class="click" id="Concat"> Concat </a>
+        <a href="#" class="click" id="Includes"> Includes </a>
+        <a href="#" class="click" id="ForEach"> ForEach </a>
+        <a href="#" class="click" id="Map"> Map </a>
+        <a href="#" class="click" id="Filter"> Filter </a>
+        <a href="#" class="click" id="Find"> Find </a>
+        <a href="#" class="click" id="Shift"> Shift </a>
+        <a href="#" class="click" id="Unshift"> Unshift </a>
+        <a href="#" class="click" id="Reverse"> Reverse </a>
+        <a href="#" class="click" id="Reduce"> Reduce </a>
+        <a href="#" class="click" id="Sort"> Sort </a>
+        <a href="#" class="click" id="Splice"> Splice </a>
+        <a href="#" class="click" id="Every"> Every </a>
+        <a href="#" class="click" id="Some"> Some </a>
+        <a href="#" class="click" id="From"> From </a>
+    </div>
+
+    <div class="modales">
+        <section class="modal" id="MPush">
+            <div class="contenedor" id="Push">
+                <h2 class="titulo_modal">Push</h2>
+                <p class="párrafo_modal">El método push() añade uno o más elementos al final de un array </p>
+                <div class="show">
+                    <input type="text" id="pushElemento" placeholder="Ingrese un elemento">
+                    <button id="pushBoton">Añadir Elemento</button>
+                </div>
+                <div id="pushContenido"></div>
+                <a href="#" class="cerrar" id="cerrar"> Cerrar </a>
+            </div>
+        </section>
+
+        <section class="modal" id="MPop">
+            <div class="contenedor" id="Pop">
+                <h2 class="titulo_modal">Pop</h2>
+                <p class="párrafo_modal">El método pop() elimina el último elemento de un array</p>
+                <div class="show">
+                    <input type="text" id="pushElemento" placeholder="Ingrese un elemento">
+                    <button id="pushBoton">Añadir Elemento</button>
+                </div>
+                <div id="pushContenido"></div>
+                <a href="#" class="cerrar" id="cerrar2"> Cerrar </a>
+            </div>
+        </section>
+
+        <section class="modal" id="MIndexOf">
+            <div class="contenedor" id="IndexOf">
+                <h2 class="titulo_modal">IndexOf</h2>
+                <p class="párrafo_modal">El método indexOf() devuelve el primer índice en el que se puede encontrar un 
+                    elemento en el array, o -1 si no está presente.
+                </p>
+                <a href="#" class="cerrar" id="cerrar3"> Cerrar </a>
+            </div>
+        </section>
+
+        <section class="modal" id="MLastIndexOf">
+            <div class="contenedor" id="LastIndexOf">
+                <h2 class="titulo_modal">LastIndexOf</h2>
+                <p class="párrafo_modal">El método lastIndexOf() devuelve el último índice en el que se puede encontrar un elemento 
+                    dado en el array, o -1 si no está presente. El array busca hacia atrás, comenzando por el último elemento.
+                </p>
+                <a href="#" class="cerrar" id="cerrar4"> Cerrar </a>
+            </div>
+        </section>
+
+        <section class="modal" id="MSlice">
+            <div class="contenedor" id="Slice">
+                <h2 class="titulo_modal">Slice</h2>
+                <p class="párrafo_modal">El método slice() devuelve una copia superficial de una parte de un array en uno nuevo,
+                    seleccionado de principio a fin (no se incluye el final), donde el inicio y el final se representan por los índices
+                    de los elementos de ese array. El array original no se modificará.
+                </p>
+                <a href="#" class="cerrar" id="cerrar5"> Cerrar </a>
+            </div>
+        </section>
+
+        <section class="modal" id="MJoin">
+            <div class="contenedor" id="Join">
+                <h2 class="titulo_modal">Join</h2>
+                <p class="párrafo_modal">El método join() crea y devuelve un nuevo string al concatenar todos los elementos 
+                    en un array (o un objeto similar a un array), utilizando un caracter o cadena específicos entre estos. 
+                    Si la matriz tiene solo un elemento, ese elemento se devolverá sin usar el separador.
+                </p>
+                <a href="#" class="cerrar" id="cerrar6"> Cerrar </a>
+            </div>
+        </section>
+
+        <section class="modal" id="MConcat">
+            <div class="contenedor" id="Concat">
+                <h2 class="titulo_modal">Concat</h2>
+                <p class="párrafo_modal">El método concat() se utiliza para juntar dos o más arrays. 
+                    Este método no cambia los arrays existentes, sino que devuelve un nuevo array.
+                </p>
+                <a href="#" class="cerrar" id="cerrar7"> Cerrar </a>
+            </div>
+        </section>
+
+        <section class="modal" id="MIncludes">
+            <div class="contenedor" id="Includes">
+                <h2 class="titulo_modal">Includes</h2>
+                <p class="párrafo_modal">El método includse() determina si un array incluye un cierto valor en sus elementos, 
+                    devolviendo verdadero o falso según corresponda.
+                </p>
+                <a href="#" class="cerrar" id="cerrar8"> Cerrar </a>
+            </div>
+        </section>
+
+        <section class="modal" id="MForEach">
+            <div class="contenedor" id="ForEach">
+                <h2 class="titulo_modal">ForEach</h2>
+                <p class="párrafo_modal">El método forEach() ejecuta una función proporcionada una vez para cada elemento de la matriz.</p>
+                <a href="#" class="cerrar" id="cerrar9"> Cerrar </a>
+            </div>
+        </section>
+
+        <section class="modal" id="MMap">
+            <div class="contenedor" id="Map">
+                <h2 class="titulo_modal">Map</h2>
+                <p class="párrafo_modal">El método map() crea un nuevo array con los resultados de llamar a una función proporcionada 
+                    en cada elemento del array llamado.
+                </p>
+                <a href="#" class="cerrar" id="cerrar10"> Cerrar </a>
+            </div>
+        </section>
+
+        <section class="modal" id="MFilter">
+            <div class="contenedor" id="Filter">
+                <h2 class="titulo_modal">Filter</h2>
+                <p class="párrafo_modal">El método filter() crea una copia superficial de una parte del array dado, 
+                    filtrada solo a los elementos del array que pasan la condición implementada por la función proporcionada.
+                </p>
+                <a href="#" class="cerrar" id="cerrar11"> Cerrar </a>
+            </div>
+        </section>
+
+        <section class="modal" id="MFind">
+            <div class="contenedor" id="Find">
+                <h2 class="titulo_modal">Find</h2>
+                <p class="párrafo_modal">El método find() devuelve el primer elemento del array proporcionado que satisfaga 
+                    la condición de prueba proporcionada. Si ningún valor satisface la condición de prueba, se devuelve undefined.
+                </p>
+                <a href="#" class="cerrar" id="cerrar12"> Cerrar </a>
+            </div>
+        </section>
+
+        <section class="modal" id="MShift">
+            <div class="contenedor" id="Shift">
+                <h2 class="titulo_modal">Shift</h2>
+                <p class="párrafo_modal">
+                    El método shift() elimina el primer elemento de un array y devuelve ese elemento eliminado. 
+                    Este método cambia la longitud de la matriz.
+                </p>
+                <a href="#" class="cerrar" id="cerrar13"> Cerrar </a>
+            </div>
+        </section>
+
+        <section class="modal" id="MUnshift">
+            <div class="contenedor" id="Unshift">
+                <h2 class="titulo_modal">Unshift</h2>
+                <p class="párrafo_modal">El método unshift() agrega los elementos especificados al comienzo de un array 
+                    y devuelve la nueva longitud de la matriz.
+                </p>
+                <a href="#" class="cerrar" id="cerrar14"> Cerrar </a>
+            </div>
+        </section>
+
+        <section class="modal" id="MReverse">
+            <div class="contenedor" id="Reverse">
+                <h2 class="titulo_modal">Reverse</h2>
+                <p class="párrafo_modal">El método reverse() invierte un array, de manera que el primer elemento del array 
+                    ahora se convierte en el último y el último elemento se convierte en el primero. 
+                    En otras palabras, el orden de los elementos en el arreglo estará girado hacia la dirección opuesta a la 
+                    establecida anteriormente.
+                </p>
+                <a href="#" class="cerrar" id="cerrar15"> Cerrar </a>
+            </div>
+        </section>
+
+        <section class="modal" id="MReduce">
+            <div class="contenedor" id="Reduce">
+                <h2 class="titulo_modal">Reduce</h2>
+                <p class="párrafo_modal">El método reduce() ejecuta una función llamada "reductora", proporcionada por el usuario en 
+                    cada elemento de la matriz, en orden, pasando el valor de retorno del cálculo en el elemento anterior. 
+                    El resultado final de ejecutar el reductor en todos los elementos de la matriz es un valor único. 
+                    (Suma todos los elementos del array)
+                </p>
+                <a href="#" class="cerrar" id="cerrar16"> Cerrar </a>
+            </div>
+        </section>
+
+        <section class="modal" id="MSort">
+            <div class="contenedor" id="Sort">
+                <h2 class="titulo_modal">Sort</h2>
+                <p class="párrafo_modal">El método Sort() organiza los elementos de un array de manera alfabética ascendente, 
+                    devolviendo el mismos array, ahora organizado
+                </p>
+                <a href="#" class="cerrar" id="cerrar17"> Cerrar </a>
+            </div>
+        </section>
+
+        <section class="modal" id="MSplice">
+            <div class="contenedor" id="Splice">
+                <h2 class="titulo_modal">Splice</h2>
+                <p class="párrafo_modal">El método splice() cambia el contenido de un array, eliminando o reemplazando elementos 
+                    existentes y/o agregando nuevos elementos en su lugar.
+                </p>
+                <a href="#" class="cerrar" id="cerrar18"> Cerrar </a>
+            </div>
+        </section>
+
+        <section class="modal" id="MEvery">
+            <div class="contenedor" id="Every">
+                <h2 class="titulo_modal">Every</h2>
+                <p class="párrafo_modal">El método every() prueba si todos los elementos del array pasan la prueba implementada 
+                    por la función proporcionada. Devuelve un valor booleano.
+                </p>
+                <a href="#" class="cerrar" id="cerrar19"> Cerrar </a>
+            </div>
+        </section>
+
+        <section class="modal" id="MSome">
+            <div class="contenedor" id="Some">
+                <h2 class="titulo_modal">Some</h2>
+                <p class="párrafo_modal">
+                    El método some() prueba si al menos un elemento del array pasa la prueba implementada por la función proporcionada. 
+                    Devuelve verdadero si, en el array, encuentra un elemento para el cual la función proporcionada devuelve verdadero; 
+                    de lo contrario, devuelve falso. No modifica la matriz.
+                </p>
+                <a href="#" class="cerrar" id="cerrar20"> Cerrar </a>
+            </div>
+        </section>
+
+        <section class="modal" id="MFrom">
+            <div class="contenedor" id="From">
+                <h2 class="titulo_modal">From</h2>
+                <p class="párrafo_modal">El método from() crea un nuevo array a partir de un objeto iterable o similar a una matriz
+                    haciendo una copia superficial del array dado.
+                </p>
+                <a href="#" class="cerrar" id="cerrar21"> Cerrar </a>
+            </div>
+        </section>
+    </div>
+
+    <div class="scripts">
+        <script src="/prueba/js/map.js" ></script>
+        <script src="/prueba/js/filter.js" ></script>
+        <script src="/prueba/js/foreach.js" ></script>
+        <script src="/prueba/js/find.js" ></script>
+        <script src="/prueba/js/sort.js" ></script>
+        <script src="/prueba/js/some.js" ></script>
+        <script src="/prueba/js/every.js" ></script>
+        <script src="/prueba/js/concat.js" ></script>
+        <script src="/prueba/js/includes.js" ></script>
+        <script src="/prueba/js/join.js" ></script>
+        <script src="/prueba/js/reduce.js" ></script>
+        <script src="/prueba/js/index.js" ></script>
+        <script src="/prueba/js/push.js" ></script>
+        <script src="/prueba/js/pop.js" ></script>
+        <script src="/prueba/js/shift.js" ></script>
+        <script src="/prueba/js/unshift.js" ></script>
+        <script src="/prueba/js/slice.js" ></script>
+        <script src="/prueba/js/reverse.js" ></script>
+        <script src="/prueba/js/splice.js" ></script>
+        <script src="/prueba/js/lastindex.js" ></script>
+        <script src="/prueba/js/from.js" ></script>  
+    </div>
+
+</body>
+</html>
