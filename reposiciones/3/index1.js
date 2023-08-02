@@ -7,9 +7,13 @@ function agregarTarea(){
         let tareaNueva = document.createElement('div')
         tareaNueva.classList.add('tarea')
 
-        let texto = document.createElement('p')
-        texto.innerText = input.value
+        let texto = document.createElement('img')
+
+        texto.src = "/reposiciones/3/imagenes/" + input.value + ".png"
         tareaNueva.appendChild(texto)
+        texto.onclick = function() {
+            texto.classList.toggle('show')
+        }
 
         let iconos = document.createElement('div')
         iconos.classList.add('iconos')
